@@ -65,5 +65,5 @@ class WeiBoLogin(object):
 # from selenium import webdriver
 #
 # if __name__ == '__main__':
-#     login = WeiBoLogin('double_xx@163.com', 'a123456a', webdriver.Chrome())
+#     login = WeiBoLogin('your username', 'your password', webdriver.Chrome())
 #     login.main()
