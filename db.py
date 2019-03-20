@@ -6,7 +6,9 @@ from .config import *
 class RedisClient(object):
     def __init__(self, type, website, host=REDIS_HOST, port=REDIS_PORT, password=REDIS_PASSWORD):
         self.db = redis.StrictRedis(host, port, password, decode_responses=True)
+        # Hash名称类型accounts或者cookies
         self.type = type
+        # 站点weibo、zhihu等
         self.website = website
 
     def name(self):
